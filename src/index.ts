@@ -35,4 +35,19 @@ const arr = [
 const filteredItemsArr = filterByRating(arr);
 // console.log(filteredItemsArr);
 
- 
+
+function concatenateArrays<T>(...arrays: T[][]): T[]{
+    return arrays.reduce((acc, curr) => acc.concat(curr), []);
+}
+
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const arr3 = [7, 8, 9];
+const concatenatedArr = concatenateArrays(arr1, arr2, arr3);
+// console.log(concatenatedArr);
+
+const  arr4 = ["a", "b", "c"];
+const arr5 = ["d", "e", "f"];
+const concatenatedArr2 = concatenateArrays(arr4, arr5);
+// console.log(concatenatedArr2);
+
