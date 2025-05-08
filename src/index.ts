@@ -51,7 +51,6 @@ const arr5 = ["d", "e", "f"];
 const concatenatedArr2 = concatenateArrays(arr4, arr5);
 // console.log(concatenatedArr2);
 
-
 class Vehicle {
     private make: string;
     private year: number;
