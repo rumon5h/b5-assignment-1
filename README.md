@@ -1,10 +1,10 @@
 ## Explain the difference between any, unknown, and never types in TypeScript.
 
-* 1. any: The any type in TypeScript is a type that can represent any value. It is a way to opt-out of type checking for a variable. When you use any, you lose all the benefits of type safety, and TypeScript will not perform any checks on the value assigned to it. This can lead to runtime errors if the value does not match the expected type.
+* any: The any type in TypeScript is a type that can represent any value. It is a way to opt-out of type checking for a variable. When you use any, you lose all the benefits of type safety, and TypeScript will not perform any checks on the value assigned to it. This can lead to runtime errors if the value does not match the expected type.
   
-* 2. unknown: The unknown type is a safer alternative to any. It represents a value that could be of any type, but you cannot perform any operations on it until you perform some type checking. This means that you have to narrow down the type before using it, which helps maintain type safety.
+* unknown: The unknown type is a safer alternative to any. It represents a value that could be of any type, but you cannot perform any operations on it until you perform some type checking. This means that you have to narrow down the type before using it, which helps maintain type safety.
   
-* 3. never: The never type represents a value that never occurs. It is used to indicate that a function will never return a value, either because it always throws an error or because it has an infinite loop. It is a subtype of every type and can be used in places where you want to indicate that a certain code path will never be reached.
+* never: The never type represents a value that never occurs. It is used to indicate that a function will never return a value, either because it always throws an error or because it has an infinite loop. It is a subtype of every type and can be used in places where you want to indicate that a certain code path will never be reached.
   
 * For example, a function that always throws an error can be typed as returning never:
   
